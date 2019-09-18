@@ -94,8 +94,10 @@ class ViewController: UIViewController {
         }
         if userAnswered == questions.list[questionNumber].answer {
             score += 1
+            ProgressHUD.showSuccess("Awesome")
 //            showAlert(responseType: 1)
         } else {
+            ProgressHUD.showError("Wrong 😔")
 //            showAlert(responseType: 0)
         }
         
